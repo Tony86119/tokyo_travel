@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>東京旅遊地圖</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel='stylesheet' href="/tool/footable/css/footable.bootstrap.css">
+  <link rel='stylesheet' href="/tool/footable/css/footable.bootstrap.min.css">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel='stylesheet' href='/tool/fontawesome-free-5.9.0-web/css/all.css' />
+
+
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 80%;
+
+    }
+
+    p {
+      margin-bottom: 0px
+    }
+
+    #list {
+      padding: 0px
+    }
+  </style>
+</head>
+
+<body>
+  <h2><i class="fas fa-plane"></i>地圖</h2>
+  <div class="row" style="height: 460px;">
+    <div id="map" class="col-md-12" style="height: 450px;"></div>
+  </div>
+  <div class="row">
+    <div class="input-group mb-3">
+      <input type="text" id="searchAddress" class="form-control" placeholder="搜尋"  aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" onclick="searchLocationByAddress()"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div id="list" class="col-md-12">
+        <button class="btn btn-primary" id="travel_plan">旅遊行程</button>
+        <button class="btn btn-info" id="travel_plan">吃的餐廳</button>
+        <button class="btn btn-warning" onclick="geolocation()"><i class="fas fa-location-arrow"></i>定位</button>
+        <table id="travel_table" class="table table-bordered on"></table>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+  </script>
+
+
+
+
+  <script src="/javascripts/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="/tool/footable/js/footable.js"></script>
+  <script src="/tool/footable/js/footable.min.js"></script>
+  <script src="/javascripts/common.js"></script>
+  <script src="/javascripts/map/main.js"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVj7wInWLih5hYS136VxKAKYkO7M8cRpc&callback=initMap"></script>
+
+</body>
+
+</html>

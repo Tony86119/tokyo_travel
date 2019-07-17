@@ -1,14 +1,43 @@
+#map {
+  height: 80%;
+
+}
+
+p {
+  margin-bottom: 0px
+}
+
+#list {
+  padding: 0px
+}
+
 body {
-  padding: 50px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   font: 14px ;
   font-family: 'Microsoft JhengHei';
 }
 
 a {
-  color: #00B7FF;
+  font-size:20px;
+  color: rgb(33, 52, 161);
 }
 
 
 #mapid{
   height:500px
+}
+
+#travel_table{
+  margin-top: 10px;
+
+}
+#traffic_table{
+  margin-top: 10px;
+}
+#title_id{
+font-color: rgb(30, 72, 163);
+
+
 }

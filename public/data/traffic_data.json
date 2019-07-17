@@ -1,0 +1,28 @@
+[
+    {
+    "Title":"機票",
+      "type":"flight",
+      "flight_no":"TR-898",
+      "from":"台北桃園(TPE)航廈1",
+      "to":"東京成田(NRT)航廈2",
+      "start_date":"2019/08/15",
+      "start_time":"06:30",
+      "end_time":"11:05",
+      "flight_time":"3h25m",
+      "check_time":"03:40",
+      "fare_Class":"W1"
+    },
+        {
+    "Title":"機票",
+      "type":"flight",
+      "flight_no":"TR-875",
+      "from":"東京成田(NRT)航廈2",
+      "to":"台北桃園(TPE)航廈1",
+      "start_date":"2019/08/19",
+      "start_time":"20:25",
+      "end_time":"23:10",
+      "flight_time":"3h45m",
+      "check_time":"17:55",
+      "fare_Class":"X1"
+    
+}]

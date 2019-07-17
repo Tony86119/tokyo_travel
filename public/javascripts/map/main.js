@@ -2,7 +2,7 @@ var googlemap;
 var jsondata;
 var searchResult_marker;
 
-
+//list table
 var roswsdata=$.get("/data/travel.json");
 
 var columnsdata=$.get("/data/travelColumn.json");
@@ -39,8 +39,8 @@ jQuery(function ($) {
 				"formatter": function(value){
 					var divTag="";
 					for(i=0;i<value.length;i++){
-						var Time_string="<a>開始："+value[i].startTime+"</a><p>結束："+value[i].endTime+"</p>";
-						var Plan_string="<a>計畫行程：</a><p>"+value[i].plan+"</p><a>------------------</a>"
+						var Time_string="<p>開始："+value[i].startTime+"</p><p>結束："+value[i].endTime+"</p>";
+						var Plan_string="<p>計畫行程：</p><p>"+value[i].plan+"</p><a>------------------</a>"
 					 var div="<div>"+Time_string+Plan_string+"</div>"
 					 	divTag=divTag+div;
 					}
@@ -160,3 +160,60 @@ $("#travel_plan").click(function(){
 	
 
 })
+
+
+//traffic table
+var trafficdata=$.get("/data/traffic_data.json");
+var trafficColumn=$.get("/data/trafficColumn.json");
+
+
+jQuery(function ($) {
+    $('#traffic_table').footable({
+        // "paging": {
+        //     "enabled": true
+        // },
+        // "filtering": {
+        //     "enabled": true
+        // },
+        "sorting": {
+            "enabled": true
+        },
+        "columns": trafficColumn,
+        rows: trafficdata
+    }); 
+});
+
+
+// [
+// 	{
+// 		"name": "Title",
+// 		"title": "種類",
+// 	  },
+// 	  {
+// 		  "title":"描述",
+// 		  "breakpoints": "xs",
+// 		"type": "object",
+// 		"style": {
+// 			"width": 300,
+// 			"maxWidth": 300
+// 		  },
+// 		"name": "Description",
+// 		"formatter": function(value){
+// 			var divTag="";
+// 				var htmlString=
+// 				"<p>航班："+value.flight_no+"</p>"+
+// 				"<p>出發："+value.from+"</p>"+
+// 				"<p>抵達："+value.to+"</p>"+
+// 				"<p>出發日期："+value.start_date+"</p>"+
+// 				"<p>出發時間："+value.start_time+"</p>"+
+// 				"<p>抵達時間："+value.end_time+"</p>"+
+// 				"<p>飛行時間："+value.flight_time+"</p>"+
+// 				"<p>報到時間："+value.check_time+"</p>"+
+// 				"<p>fare Class："+value.fare_Class+"</p>"
+// 			 var div="<div>"+htmlString+"</div>"
+// 				 divTag=divTag+div;
+			
+// 		return divTag;
+// 	}
+	
+// }]

@@ -16,43 +16,77 @@
   <style>
     /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-    #map {
-      height: 80%;
-
-    }
-
-    p {
-      margin-bottom: 0px
-    }
-
-    #list {
-      padding: 0px
-    }
   </style>
 </head>
 
 <body>
-  <h2><i class="fas fa-plane"></i>地圖</h2>
-  <div class="row" style="height: 460px;">
-    <div id="map" class="col-md-12" style="height: 450px;"></div>
+  <div id="title_id">
+    <h2><i class="fas fa-plane"></i>　地圖</h2>
   </div>
-  <div class="row">
-    <div class="input-group mb-3">
-      <input type="text" id="searchAddress" class="form-control" placeholder="搜尋"  aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" onclick="searchLocationByAddress()"><i class="fas fa-search"></i></button>
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab"
+        aria-controls="pills-home" aria-selected="true">地圖</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-list-tab" data-toggle="pill" href="#pills-list" role="tab"
+        aria-controls="pills-profile" aria-selected="false">行程</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-restaurant-tab" data-toggle="pill" href="#pills-restaurant" role="tab"
+        aria-controls="pills-contact" aria-selected="false">餐廳</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-traffic-tab" data-toggle="pill" href="#pills-traffic" role="tab"
+        aria-controls="pills-contact" aria-selected="false">交通</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <!-- 地圖tab -->
+    <div class="tab-pane fade show active" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+      <!-- tab content -->
+      <div class="row" style="height: 500px;">
+        <div id="map" class="col-md-12" style="height: 490px;"></div>
       </div>
-    </div>
-  </div>
-    <div class="row">
-      <div id="list" class="col-md-12">
-        <button class="btn btn-primary" id="travel_plan">旅遊行程</button>
-        <button class="btn btn-info" id="travel_plan">吃的餐廳</button>
-        <button class="btn btn-warning" onclick="geolocation()"><i class="fas fa-location-arrow"></i>定位</button>
-        <table id="travel_table" class="table table-bordered on"></table>
+      <div class="row">
+        <div class="input-group mb-3">
+          <input type="text" id="searchAddress" class="form-control" placeholder="搜尋" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="searchLocationByAddress()"
+              style="margin-right:6px;">
+              <i class="fas fa-search"></i></button><button class="btn btn-warning" onclick="geolocation()"><i
+                class="fas fa-location-arrow"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
 
       </div>
     </div>
+    <!-- list tab -->
+    <div class="tab-pane fade" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
+      <!-- list contnet -->
+      <div class="row">
+        <div id="list" class="col-md-12">
+          <table id="travel_table" class="table table-bordered on"></table>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade" id="pills-restaurant" role="tabpanel" aria-labelledby="pills-restaurant-tab">...</div>
+    <div class="tab-pane fade" id="pills-traffic" role="tabpanel" aria-labelledby="pills-traffic-tab">
+      <div class="row">
+        <div id="list" class="col-md-12">
+          <table id="traffic_table" class="table table-bordered on"></table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   </div>
 
   <script>
@@ -64,11 +98,11 @@
 
   <script src="/javascripts/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
   <script src="/tool/footable/js/footable.js"></script>
   <script src="/tool/footable/js/footable.min.js"></script>
   <script src="/javascripts/common.js"></script>

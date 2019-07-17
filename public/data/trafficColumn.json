@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Title",
+        "title": "種類"
+    },
+    {
+        "name": "flight_no",
+        "breakpoints": "xs",
+        "title": "航班"
+    },
+    {
+        "name": "from",
+        "breakpoints": "xs",
+        "title": "出發"
+    },  {
+        "name": "to",
+        "breakpoints": "xs",
+        "title": "抵達"
+    },  {
+        "name": "start_date",
+        "breakpoints": "xs",
+        "title": "出發日期"
+    },  {
+        "name": "start_time",
+        "breakpoints": "xs",
+        "title": "出發時間"
+    },  {
+        "name": "end_time",
+        "breakpoints": "xs",
+        "title": "抵達時間"
+    },  {
+        "name": "flight_time",
+        "breakpoints": "xs",
+        "title": "飛行時間"
+    },  {
+        "name": "check_time",
+        "breakpoints": "xs",
+        "title": "報到時間"
+    },  {
+        "name": "fare_Class",
+        "breakpoints": "xs",
+        "title": "fare Class"
+    }
+  ]

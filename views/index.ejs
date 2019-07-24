@@ -16,14 +16,19 @@
   <style>
     /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
+    .nav-link {
+
+      padding: .5rem .7rem;
+    }
+    
   </style>
 </head>
 
 <body>
-  <div id="title_id">
-    <h2><i class="fas fa-plane"></i>　地圖</h2>
-  </div>
-  <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+  <!-- <div id="title_id">
+    <h2><i class="fas fa-plane"></i><i class="fas fa-plane"></i><i class="fas fa-plane"></i><i class="fas fa-plane"></i><i class="fas fa-plane"></i><i class="fas fa-plane"></i></h2>
+  </div> -->
+  <ul class="nav nav-pills nav-fill mb-3" id="pills-tab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab"
         aria-controls="pills-home" aria-selected="true">地圖</a>
@@ -88,20 +93,20 @@
       </div>
     </div>
     <div class="tab-pane fade" id="pills-shopping" role="tabpanel" aria-labelledby="pills-shopping-tab">
-      <div class="row">
-        <form role="form" action="/add_item" method="POST">
+      <div class="row" style="border: 2px rgb(202, 202, 202) solid">
+        <form role="form" action="/add_item" method="POST" style="margin: 0 auto;margin-top: 10px;margin-bottom: 10px;width: 80%;">
           <div class="form-group">
-            <label for="shopping_item">新增清單項目</label>
+            <h3 class="text-center">新增清單項目</h3>
             <input type="text" class="form-control" id="shopping_item" name="shopping_item" placeholder="請填寫">
           </div>
-          <button type="submit" class="btn btn-primary">新增</button>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">新增</button>
 
         </form>
       </div>
       <div class="row" style="margin-top: 10px">
-       
-          <table id="shopping_table" class="table table-bordered on"></table>
-      
+
+        <table id="shopping_table" class="table table-bordered on"></table>
+
         <div class="row">
         </div>
       </div>

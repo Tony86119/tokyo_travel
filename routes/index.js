@@ -16,7 +16,7 @@ router.get('/get_item_list', function(req, res, next) {
 let rawdata = fs.readFileSync('./public/data/buylist.json');
 var data=JSON.parse(rawdata);
 for(var i=0;i<data.length;i++){
-  data[i].function = "<button  id ='" + i + "' type=\"button\" class=\"btn btn-danger \"  onclick=\"delete_item(this.id)\" >刪除</button>";
+  data[i].function = "<button  id ='" + i + "' type=\"button\" class=\"btn btn-danger btn btn-block \"  onclick=\"delete_item(this.id)\" >刪除</button>";
 }
    res.send(data);
 });
@@ -26,7 +26,7 @@ router.post('/add_item', function(req, res, next) {
   let rawdata = fs.readFileSync('./public/data/buylist.json');
   var data=JSON.parse(rawdata);
   var obj= {};
-  obj.Title=item
+  obj.Title=item;
   data.push(obj);
   console.log(data);
   fs.writeFile('./public/data/buylist.json', JSON.stringify(data), function(err) {

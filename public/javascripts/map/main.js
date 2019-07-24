@@ -3,7 +3,7 @@ var jsondata;
 var searchResult_marker;
 
 //list table
-var roswsdata=$.get("/data/travel.json");
+var roswsdata=$.get("/data/travel_amy.json");
 
 var columnsdata=$.get("/data/travelColumn.json");
 
@@ -183,6 +183,49 @@ jQuery(function ($) {
     }); 
 });
 
+//shopping list
+//traffic table
+var itemdata=$.get("/get_item_list");
+var itemColumn=$.get("/data/itemColumn.json");
+
+
+jQuery(function ($) {
+    $('#shopping_table').footable({
+        // "paging": {
+        //     "enabled": true
+        // },
+        // "filtering": {
+        //     "enabled": true
+        // },
+        "sorting": {
+            "enabled": true
+        },
+        "columns": itemColumn,
+        rows: itemdata
+    }); 
+});
+
+// delete function
+
+function delete_item(id){
+	$.ajax({
+		url: "/delete_item/"+id,
+		type: 'post',
+		data: {},
+		dataType: 'text',
+		beforeSend: function () {
+			//console.log("start to load town data");
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			console.log("Error: Can't detelte this item.");
+		},
+		success: function (data) {
+		alert("delete successful!")
+		window.location.reload(true);
+		}
+	});
+	
+}
 
 // [
 // 	{

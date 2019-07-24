@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Title",
+        "title": "名稱"
+    },
+    {
+        "name": "function",
+        "title": "功能",
+        "style": {
+            "width": 100,
+            "maxWidth": 100
+          }
+    }
+]

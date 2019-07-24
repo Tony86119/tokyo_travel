@@ -1,0 +1,269 @@
+[
+    {
+    "Title":"第一天",
+    "Date":"2019/08/15",
+    "TimeLine":[
+        {
+            "id":1,
+            "startTime":"04:00",
+            "endTime":"06:40",
+            "plan":"抵達機場與報到登機"
+        },{
+            "id":2,
+            "startTime":"06:40",
+            "endTime":"11:05",
+            "plan":"機票起飛時間與降落時間"
+        },{
+            "id":3,
+            "startTime":"12:00",
+            "endTime":"14:00",
+            "plan":"搭車前往東京(吃點東西)"
+        },{
+            "id":4,
+            "startTime":"14:00",
+            "endTime":"15:30",
+            "plan":"前往智鷹旅館Wise owl hostels Tokyo放行李"
+        },{
+            "id":5,
+            "startTime":"15:30",
+            "endTime":"19:00",
+            "plan":"車站附近逛街"
+        }
+    ],
+    "foodPlan":[
+        {
+            "name":"",
+            "type":"breakfast",
+            "location":""
+        },
+        {
+            "name":"",
+            "type":"lunch",
+            "location":""
+        },
+        {
+            "name":"",
+            "type":"dinner",
+            "location":""
+        }
+    ]
+},
+{
+    "Title":"第二天",
+    "Date":"2019/08/16",
+    "TimeLine":[
+        {
+            "startTime":"07:40",
+            "endTime":"08:30",
+            "plan":"起床整理東西"
+        },{
+            "startTime":"08:40",
+            "endTime":"09:00",
+            "plan":"搭車去迪士尼(八丁堀--->舞浜站)"
+        },{
+            "startTime":"09:00",
+            "endTime":"21:00",
+            "plan":"迪士尼"
+        },{
+            "startTime":"21:00",
+            "endTime":"22:00",
+            "plan":"回智鷹旅館休息"
+        }
+
+    ],
+    "foodPlan":[
+        {
+            "name":"",
+            "type":"breakfast",
+            "location":""
+        },
+        {
+            "name":"",
+            "type":"lunch",
+            "location":""
+        },
+        {
+            "name":"",
+            "type":"dinner",
+            "location":""
+        }
+    ]
+},
+{
+    "Title":"第三天",
+    "Date":"2019/08/17",
+    "TimeLine":[
+        {
+            "startTime":"08:00",
+            "endTime":"09:00",
+            "plan":"起床整理東西"
+        },{
+            "startTime":"09:00",
+            "endTime":"10:00",
+            "plan":"前往新飯店放東西和吃點東西 日比谷Hibiya站"
+        },{
+            "startTime":"10:00",
+            "endTime":"13:00",
+            "plan":"皇居"
+        },{
+            "startTime":"13:00",
+            "endTime":"15:00",
+            "plan":"明治神宮 原宿站Harajuku"
+        },{
+            "startTime":"15:00",
+            "endTime":"17:00",
+            "plan":"竹下通或表參道"
+        },{
+            "startTime":"17:00",
+            "endTime":"20:00",
+            "plan":"回住宿休息一下"
+        },{
+            "startTime":"20:00",
+            "endTime":"21:00",
+            "plan":"六本木森大樓"
+        }
+
+    ],
+    "foodPlan":[
+        {
+            "name":"麵包店Cawaii bread and coffee",
+            "type":"breakfast",
+            "location":""
+        },
+        {
+            "name":"拉麵Kyushu JANGARA Ramen Omotesando Jangara",
+            "type":"lunch",
+            "location":""
+        },
+		{
+            "name":"可麗餅 MARION CREPES",
+            "type":"dessert",
+            "location":""
+        },
+				{
+            "name":"薯片Calbee+",
+            "type":"dessert",
+            "location":""
+        },
+				{
+            "name":"第八蛸華丸章魚燒",
+            "type":"dessert",
+            "location":""
+        },
+        {
+            "name":"烏龍麵TSURUTONTANつるとんたん",
+            "type":"dinner",
+            "location":""
+        }
+    ]
+},
+{
+    "Title":"第四天",
+    "Date":"2019/08/18",
+    "TimeLine":[
+        {
+            "startTime":"08:30",
+            "endTime":"09:30",
+            "plan":"起床整理東西"
+        },{
+            "startTime":"09:30",
+            "endTime":"10:00",
+            "plan":"(日比谷線)前往上野車站放行李"
+        },{
+            "startTime":"10:00",
+            "endTime":"15:00",
+            "plan":"上野動物園、上野科學博物館、花園稲荷神社"
+        },{
+            "startTime":"15:00",
+            "endTime":"15:30",
+            "plan":"(銀座線)搭車去淺草站"
+        },{
+            "startTime":"15:30",
+            "endTime":"18:00",
+            "plan":"休息and吃飯"
+        },{
+            "startTime":"18:00",
+            "endTime":"21:00",
+            "plan":"逛藥妝店、Uniqlo"
+        },{
+            "startTime":"21:00",
+            "endTime":"23:00",
+            "plan":"走去拍雷門"
+        },{
+            "startTime":"23:00",
+            "endTime":"24:00",
+            "plan":"入住APA HOTEL Asakusa"
+        }
+
+    ],
+    "foodPlan":[
+        {
+            "name":"飯店早餐",
+            "type":"breakfast",
+            "location":""
+        },
+        {
+            "name":"平價鰻魚飯 名代 宇奈とと",
+            "type":"lunch",
+            "location":""
+        },
+        {
+            "name":"文樂串燒居酒屋",
+            "type":"dinner",
+            "location":""
+        }
+    ]
+},
+{
+    "Title":"第五天",
+    "Date":"2019/08/19",
+    "TimeLine":[
+        {
+            "startTime":"08:30",
+            "endTime":"09:30",
+            "plan":"起床整理東西"
+        },{
+            "startTime":"09:30",
+            "endTime":"10:00",
+            "plan":"早上的雷門"
+        },{
+            "startTime":"10:00",
+            "endTime":"12:00",
+            "plan":"淺草寺"
+        },{
+            "startTime":"12:00",
+            "endTime":"13:30",
+            "plan":"休息and吃飯"
+        },{
+            "startTime":"13:30",
+            "endTime":"15:30",
+            "plan":"仲見世通り商店街買伴手禮"
+        },{
+            "startTime":"15:30",
+            "endTime":"18:00",
+            "plan":"前往機場"
+        }
+
+    ],
+    "foodPlan":[
+        {
+            "name":"飯店早餐",
+            "type":"breakfast",
+            "location":""
+        },
+        {
+            "name":"池波正太郎 並木藪蕎麦麵",
+            "type":"lunch",
+            "location":""
+        },
+        {
+            "name":"機場附近吃吃",
+            "type":"dinner",
+            "location":""
+        }
+    ]
+}
+
+
+
+]

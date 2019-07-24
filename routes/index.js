@@ -32,7 +32,7 @@ router.post('/add_item', function(req, res, next) {
   fs.writeFile('./public/data/buylist.json', JSON.stringify(data), function(err) {
     if (err) throw err;
     console.log('file saved');
-    res.redirect('/');
+    res.send({status:"success"});
   });
 });
 
@@ -46,7 +46,7 @@ router.post('/delete_item/:id', function(req, res, next) {
   fs.writeFile('./public/data/buylist.json', JSON.stringify(data), function(err) {
     if (err) throw err;
     console.log('file saved');
-    res.redirect('/');
+    res.send({status:"success"});
   });
 });
 

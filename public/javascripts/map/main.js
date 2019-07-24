@@ -206,6 +206,32 @@ jQuery(function ($) {
 });
 
 // delete function
+function post_item(){
+	var item= $("#shopping_item").val();
+	
+	$.ajax({
+		url: "/add_item",
+		type: 'post',
+		data: {shopping_item:item},
+		dataType: 'json',
+		beforeSend: function () {
+			//console.log("start to load town data");
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			console.log("Error: Can't detelte this item.");
+		},
+		success: function (data) {
+		alert("add successful!")
+		//window.location.reload(true);
+		$('#shopping_table').footable({
+		"columns": $.get("/data/itemColumn.json"),
+			rows: $.get("/get_item_list")
+		}); 
+		}
+	});
+
+}
+
 
 function delete_item(id){
 	$.ajax({
@@ -221,7 +247,20 @@ function delete_item(id){
 		},
 		success: function (data) {
 		alert("delete successful!")
-		window.location.reload(true);
+		//window.location.reload(true);
+		$('#shopping_table').footable({
+			// "paging": {
+			//     "enabled": true
+			// },
+			// "filtering": {
+			//     "enabled": true
+			// },
+			"sorting": {
+				"enabled": true
+			},
+			"columns": $.get("/data/itemColumn.json"),
+			rows: $.get("/get_item_list")
+		}); 
 		}
 	});
 	

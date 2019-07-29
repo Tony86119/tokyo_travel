@@ -1,2 +1,3 @@
 /node_modules
 /.vscode
+/public/data/buylist.json
